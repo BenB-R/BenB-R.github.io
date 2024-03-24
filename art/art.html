@@ -3,45 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Developer Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Art - Benjamin Buckfield Richards</title>
+    <link rel="stylesheet" href="art.css">
+    <script src="art.js"></script>
 </head>
 <body>
+    <nav class="main-navigation">
+        <ul>
+            <li><a href="../home/home.html">Home</a></li>
+            <li><a href="../blog/blog.html">Blog</a></li>
+            <li><a href="../games/games.html">Games</a></li>
+            <li><a href="../music/music.html">Music</a></li>
+            <li><a href="art.html">Art</a></li>
+        </ul>
+    </nav>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#games">Games</a></li>
-                <li><a href="#music">Music</a></li>
-                <li><a href="#art">Art</a></li>
-            </ul>
-        </nav>
+        <h1>Artwork</h1>
+        <p>Art sets I've created and artwork from various games I've worked on</p>
     </header>
-    <section id="home">
-        <h1>About Me</h1>
-        <p>This is a placeholder about me. Replace this with information about yourself.</p>
-    </section>
-    <section id="blog">
-        <h1>Blog</h1>
-        <p>Future section for blog posts. Feature to create a new blog post will be implemented here.</p>
-    </section>
-    <section id="games">
-        <h1>Games</h1>
-        <div class="game">
-            <img src="path_to_image.jpg" alt="Game Title">
-            <h2>Game Title</h2>
-            <p>Game Description. This section can be duplicated for each game you want to showcase.</p>
-            <a href="downloadlink_here">Download Game</a>
-        </div>
-    </section>
-    <section id="music">
-        <h1>Music</h1>
-        <p>Future section for music. Replace this with your music content.</p>
-    </section>
-    <section id="art">
-        <h1>Art</h1>
-        <p>Future section for art. Replace this with your art content.</p>
-    </section>
+    <main class="art-content">
+        <section class="art-collection">
+            <h2>Bear Brewery Art</h2>
+            <div class="art-list">
+                <!-- Visible artworks -->
+                <div class="art-piece">
+                    <span class="art-title">Buddy</span>
+                    <img src="art/Bear Brewery/buddy.png" alt="Artwork Title 1" class="art-image">
+                </div>
+                <div class="art-piece">
+                    <span class="art-title">Factory</span>
+                    <img src="art/Bear Brewery/factory.gif" alt="Artwork Title 1" class="art-image">
+                </div>
+                <!-- ... other visible artworks ... -->
+                <!-- Hidden artworks, shown when "More" is clicked -->
+                <div class="additional-art">
+                    <div class="art-piece">
+                        <span class="art-title">outdoors</span>
+                        <img src="art/Bear Brewery/outside.PNG" alt="Artwork Title 1" class="art-image">
+                    </div>
+                </div>
+                <button class="more-btn">More</button>
+            </div>
+        </section>
+        <!-- Repeat for each art collection -->
+    </main>
 </body>
 </html>

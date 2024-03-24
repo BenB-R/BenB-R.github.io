@@ -45,34 +45,42 @@ header {
     color: white;
 }
 
-.blog-content {
-    padding: 20px;
-}
-
-.blog-post {
+.music-set {
     background-color: white;
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px auto;
+    max-width: 800px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.post-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+.music-set h2 {
+    color: #222;
+    margin-bottom: 16px;
 }
 
-.post-date {
-    color: #888;
-    font-size: 0.9em;
+.track {
+    margin-bottom: 12px;
 }
 
-.read-more {
-    color: #333;
-    text-decoration: none;
+.track-title {
+    display: block;
     font-weight: bold;
+    margin-bottom: 4px;
 }
 
-.read-more:hover {
-    text-decoration: underline;
+.additional-tracks {
+    display: none;
+}
+
+.more-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.more-btn:hover {
+    background-color: #555;
 }

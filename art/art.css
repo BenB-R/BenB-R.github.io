@@ -45,34 +45,54 @@ header {
     color: white;
 }
 
-.blog-content {
-    padding: 20px;
-}
+/* Add this to your existing CSS, adjusting paths as necessary */
 
-.blog-post {
+.art-collection {
     background-color: white;
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px auto;
+    max-width: 800px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.post-image {
+.art-collection h2 {
+    color: #222;
+    margin-bottom: 16px;
+}
+
+.art-piece {
+    margin-bottom: 12px;
+    text-align: center; /* Center the artwork and title */
+}
+
+.art-title {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.art-image {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
 }
 
-.post-date {
-    color: #888;
-    font-size: 0.9em;
+.additional-art {
+    display: none;
 }
 
-.read-more {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
+.more-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block; /* Make the button block to fill the container */
+    width: 100%; /* Stretch the button to the full width */
+    margin-top: 10px; /* Add some space above the button */
 }
 
-.read-more:hover {
-    text-decoration: underline;
+.more-btn:hover {
+    background-color: #555;
 }

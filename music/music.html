@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music - Benjamin Buckfield Richards</title>
+    <link rel="stylesheet" href="music.css">
+    <script src="music.js"></script>
+</head>
+<body>
+    <nav class="main-navigation">
+        <ul>
+            <li><a href="../home/home.html">Home</a></li>
+            <li><a href="../blog/blog.html">Blog</a></li>
+            <li><a href="../games/games.html">Games</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="../art/art.html">Art</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Music</h1>
+        <p>Soundtracks I've created</p>
+    </header>
+    <main class="music-content">
+        <section class="music-set">
+            <h2>Music for Bear Brewery</h2>
+            <div class="track-list">
+                <!-- Visible tracks -->
+                <div class="track">
+                    <span class="track-title">Bear Mood</span>
+                    <audio controls>
+                        <source src="music/Bear Brewery/bear_mood.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="track">
+                    <span class="track-title">Peaceful Forest</span>
+                    <audio controls>
+                        <source src="music/Bear Brewery/peaceful_forest.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <!-- Hidden tracks, shown when "More" is clicked -->
+                <div class="additional-tracks">
+                    <div class="track">
+                        <span class="track-title">Snowy Forest</span>
+                        <audio controls>
+                            <source src="music/Bear Brewery/snowy_forest.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+                <button class="more-btn">More</button>
+            </div>
+        </section>
+        <!-- Repeat for each music set -->
+    </main>
+</body>
+</html>
