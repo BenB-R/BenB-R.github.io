@@ -3,34 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Benjamin Buckfield Richards</title>
+    <title>Benjamin Buckfield Richards | Game Developer/Computer Scientist</title>
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="home.js" defer></script>
 </head>
 <body>
-    <nav class="main-navigation">
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="../blog/blog.html">Blog</a></li>
-            <li><a href="../games/games.html">Games</a></li>
-            <li><a href="../music/music.html">Music</a></li>
-            <li><a href="../art/art.html">Art</a></li>
-        </ul>
-    </nav>
     <header>
-        <img src="images/me.jpg" alt="Profile Image" class="profile-photo">
-        <h1>Benjamin Buckfield Richards</h1>
-        <p class="tagline">Game Developer / Videogame Composer</p>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="../blog/blog.html">Blog</a></li>
+                <li><a href="../games/games.html">Games</a></li>
+                <li><a href="../music/music.html">Music</a></li>
+                <li><a href="../art/art.html">Art</a></li> 
+            </ul>
+        </nav>
     </header>
-    <nav class="social-links">
-        <ul>
-            <li><a href="https://www.linkedin.com/in/benjamin-buckfield-richards-422ba61aa/">LinkedIn</a></li>
-            <li><a href="https://benb-r.itch.io/">Itch.io</a></li>
-            <!-- Add more links as needed -->
-        </ul>
-    </nav>
-    <section class="about-me">
-        <h2>About Me</h2>
-        <p>I am a student at the University of Plymouth. I am studying game development</p>
-    </section>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-background">
+                <div class="background-slide"></div>
+                <div class="background-slide"></div>
+                <div class="background-slide"></div>
+            </div>
+            <div class="hero-content">
+                <img src="images/me.jpg" alt="Benjamin Buckfield Richards" class="profile-photo">
+                <h1>Benjamin Buckfield Richards</h1>
+                <h2>Game Developer/Computer Scientist</h2>
+                <p>Creating immersive gaming experiences with compelling gameplay and captivating soundscapes</p>
+                <a href="#projects" class="cta-button">View My Work</a>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <img src="images/factory.gif" alt="Bear Brewery" class="project-image">
+                    <div class="project-content">
+                        <h3>Bear Brewery</h3>
+                        <p>A cozy factory management game about a bear finding his place in the world.</p>
+                        <ul>
+                            <li>Project Manager</li>
+                            <li>Programmer</li>
+                            <li>Artist</li>
+                            <li>Composer</li>
+                        </ul>
+                        <a href="../games/games.html#bear-brewery" class="project-link">Learn More</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="images/cooperation.png" alt="Community Mod for Mind Feast Games" class="project-image">
+                    <div class="project-content">
+                        <h3>Community Mod for Mind Feast Games</h3>
+                        <p>Led a team of four in developing a game mod, receiving commendations from the client.</p>
+                        <ul>
+                            <li>Lead Programmer</li>
+                            <li>Composer</li>
+                            <li>Project Manager</li>
+                        </ul>
+                        <a href="../games/games.html#mind-feast-mod" class="project-link">Learn More</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="images/caves.png" alt="OpenGL Noise Caves" class="project-image">
+                    <div class="project-content">
+                        <h3>OpenGL Noise Caves</h3>
+                        <p>Procedurally generated caves using OpenGL and C++, featuring advanced graphics techniques.</p>
+                        <ul>
+                            <li>Programmer</li>
+                            <li>3D Artist</li>
+                        </ul>
+                        <a href="../games/games.html#opengl-caves" class="project-link">Learn More</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills & Expertise</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Development</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Game Development</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">OpenGL</span>
+                        <span class="skill-tag">Lua</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Creative</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Music Composition</span>
+                        <span class="skill-tag">Pixel Art</span>
+                        <span class="skill-tag">3D Modeling</span>
+                        <span class="skill-tag">Level Design</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Unity</span>
+                        <span class="skill-tag">Unreal Engine</span>
+                        <span class="skill-tag">Version Control (Git)</span>
+                        <span class="skill-tag">3D Modeling Software</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>Interested in collaborating or have a project in mind? Let's connect!</p>
+            <div class="contact-info">
+                <a href="mailto:benrichards6431@hotmail.com" class="contact-button">
+                    <i class="fas fa-envelope"></i> Email Me
+                </a>
+                <a href="tel:+447702173783" class="contact-button">
+                    <i class="fas fa-phone"></i> Call Me
+                </a>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/benjamin-buckfield-richards-422ba61aa/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://benb-r.itch.io/" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-gamepad"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Benjamin Buckfield Richards. All rights reserved.</p>
+    </footer>
 </body>
 </html>
