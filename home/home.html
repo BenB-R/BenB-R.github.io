@@ -1,146 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benjamin Buckfield Richards | Game Developer/Computer Scientist</title>
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="home.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Benjamin Buckfield Richards | Game Developer/Computer Scientist</title>
+  <link rel="stylesheet" href="home.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <script src="home.js" defer></script>
 </head>
 <body>
-    <header>
-        <nav class="main-navigation">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="../blog/blog.html">Blog</a></li>
-                <li><a href="../games/games.html">Games</a></li>
-                <li><a href="../music/music.html">Music</a></li>
-                <li><a href="../art/art.html">Art</a></li> 
+  <a class="skip-link" href="#projects">Skip to content</a>
+
+  <header>
+    <nav class="main-navigation">
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <!--
+        <li><a href="../blog/blog.html">Blog</a></li>
+        <li><a href="../games/games.html">Games</a></li>
+        <li><a href="../music/music.html">Music</a></li>
+        <li><a href="../art/art.html">Art</a></li>
+        -->
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-background">
+        <!-- uses your three existing images -->
+        <div class="background-slide" style="--img:url('images/factory.gif');"></div>
+        <div class="background-slide" style="--img:url('images/cooperation.png');"></div>
+        <div class="background-slide" style="--img:url('images/caves.png');"></div>
+      </div>
+
+      <div class="hero-content">
+        <img src="images/me.jpg" alt="Benjamin Buckfield Richards" class="profile-photo"/>
+        <h1>Benjamin Buckfield Richards</h1>
+        <h2>Game Developer/Computer Scientist</h2>
+        <p>Creating immersive gaming experiences with compelling gameplay and captivating soundscapes</p>
+        <div class="hero-cta">
+          <a href="#projects" class="cta-button" data-gamify="view-work">View My Work</a>
+          <a href="https://benb-r.itch.io/" class="cta-button ghost" data-gamify="play-games">Play Games</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS (exactly 3) -->
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <article class="project-card" data-project="bear-brewery">
+          <img src="images/factory.gif" alt="Bear Brewery" class="project-image" loading="lazy"/>
+          <div class="project-content">
+            <h3>Bear Brewery</h3>
+            <p>A cozy factory management game about a bear finding his place in the world.</p>
+            <ul class="roles">
+              <li>Project Manager</li><li>Programmer</li><li>Artist</li><li>Composer</li>
             </ul>
-        </nav>
-    </header>
+            <a href="../games/games.html#bear-brewery" class="project-link" data-gamify="project-link">Learn More</a>
+          </div>
+        </article>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-background">
-                <div class="background-slide"></div>
-                <div class="background-slide"></div>
-                <div class="background-slide"></div>
-            </div>
-            <div class="hero-content">
-                <img src="images/me.jpg" alt="Benjamin Buckfield Richards" class="profile-photo">
-                <h1>Benjamin Buckfield Richards</h1>
-                <h2>Game Developer/Computer Scientist</h2>
-                <p>Creating immersive gaming experiences with compelling gameplay and captivating soundscapes</p>
-                <a href="#projects" class="cta-button">View My Work</a>
-            </div>
-        </section>
+        <article class="project-card" data-project="mind-feast-mod">
+          <img src="images/cooperation.png" alt="Community Mod for Mind Feast Games" class="project-image" loading="lazy"/>
+          <div class="project-content">
+            <h3>Community Mod for Mind Feast Games</h3>
+            <p>Led a team of four in developing a game mod, receiving commendations from the client.</p>
+            <ul class="roles">
+              <li>Lead Programmer</li><li>Composer</li><li>Project Manager</li>
+            </ul>
+            <a href="../games/games.html#mind-feast-mod" class="project-link" data-gamify="project-link">Learn More</a>
+          </div>
+        </article>
 
-        <section id="projects">
-            <h2>Featured Projects</h2>
-            <div class="project-grid">
-                <article class="project-card">
-                    <img src="images/factory.gif" alt="Bear Brewery" class="project-image">
-                    <div class="project-content">
-                        <h3>Bear Brewery</h3>
-                        <p>A cozy factory management game about a bear finding his place in the world.</p>
-                        <ul>
-                            <li>Project Manager</li>
-                            <li>Programmer</li>
-                            <li>Artist</li>
-                            <li>Composer</li>
-                        </ul>
-                        <a href="../games/games.html#bear-brewery" class="project-link">Learn More</a>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <img src="images/cooperation.png" alt="Community Mod for Mind Feast Games" class="project-image">
-                    <div class="project-content">
-                        <h3>Community Mod for Mind Feast Games</h3>
-                        <p>Led a team of four in developing a game mod, receiving commendations from the client.</p>
-                        <ul>
-                            <li>Lead Programmer</li>
-                            <li>Composer</li>
-                            <li>Project Manager</li>
-                        </ul>
-                        <a href="../games/games.html#mind-feast-mod" class="project-link">Learn More</a>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <img src="images/caves.png" alt="OpenGL Noise Caves" class="project-image">
-                    <div class="project-content">
-                        <h3>OpenGL Noise Caves</h3>
-                        <p>Procedurally generated caves using OpenGL and C++, featuring advanced graphics techniques.</p>
-                        <ul>
-                            <li>Programmer</li>
-                            <li>3D Artist</li>
-                        </ul>
-                        <a href="../games/games.html#opengl-caves" class="project-link">Learn More</a>
-                    </div>
-                </article>
-            </div>
-        </section>
+        <article class="project-card" data-project="opengl-caves">
+          <img src="images/caves.png" alt="OpenGL Noise Caves" class="project-image" loading="lazy"/>
+          <div class="project-content">
+            <h3>OpenGL Noise Caves</h3>
+            <p>Procedurally generated caves using OpenGL and C++, featuring advanced graphics techniques.</p>
+            <ul class="roles">
+              <li>Programmer</li><li>3D Artist</li>
+            </ul>
+            <a href="../games/games.html#opengl-caves" class="project-link" data-gamify="project-link">Learn More</a>
+          </div>
+        </article>
+      </div>
+    </section>
 
-        <section id="skills">
-            <h2>Skills & Expertise</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Development</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">Game Development</span>
-                        <span class="skill-tag">C++</span>
-                        <span class="skill-tag">OpenGL</span>
-                        <span class="skill-tag">Lua</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Creative</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">Music Composition</span>
-                        <span class="skill-tag">Pixel Art</span>
-                        <span class="skill-tag">3D Modeling</span>
-                        <span class="skill-tag">Level Design</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">Unity</span>
-                        <span class="skill-tag">Unreal Engine</span>
-                        <span class="skill-tag">Version Control (Git)</span>
-                        <span class="skill-tag">3D Modeling Software</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills &amp; Expertise</h2>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3>Development</h3>
+          <div class="skill-list">
+            <span class="skill-tag">Game Development</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">OpenGL</span>
+            <span class="skill-tag">Lua</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Creative</h3>
+          <div class="skill-list">
+            <span class="skill-tag">Music Composition</span>
+            <span class="skill-tag">Pixel Art</span>
+            <span class="skill-tag">3D Modeling</span>
+            <span class="skill-tag">Level Design</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Tools</h3>
+          <div class="skill-list">
+            <span class="skill-tag">Unity</span>
+            <span class="skill-tag">Unreal Engine</span>
+            <span class="skill-tag">Version Control (Git)</span>
+            <span class="skill-tag">3D Modeling Software</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section id="contact">
-            <h2>Get in Touch</h2>
-            <p>Interested in collaborating or have a project in mind? Let's connect!</p>
-            <div class="contact-info">
-                <a href="mailto:benrichards6431@hotmail.com" class="contact-button">
-                    <i class="fas fa-envelope"></i> Email Me
-                </a>
-                <a href="tel:+447702173783" class="contact-button">
-                    <i class="fas fa-phone"></i> Call Me
-                </a>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/benjamin-buckfield-richards-422ba61aa/" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://benb-r.itch.io/" target="_blank" rel="noopener noreferrer">
-                        <i class="fas fa-gamepad"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Get in Touch</h2>
+      <p>Interested in collaborating or have a project in mind? Let's connect!</p>
+      <div class="contact-info">
+        <a href="mailto:benrichards6431@hotmail.com" class="contact-button" data-gamify="email"><i class="fas fa-envelope"></i> Email Me</a>
+        <a href="tel:+447702173783" class="contact-button" data-gamify="phone"><i class="fas fa-phone"></i> Call Me</a>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/benjamin-buckfield-richards-422ba61aa/" target="_blank" rel="noopener noreferrer" data-gamify="linkedin"><i class="fab fa-linkedin"></i></a>
+          <a href="https://benb-r.itch.io/" target="_blank" rel="noopener noreferrer" data-gamify="itch"><i class="fas fa-gamepad"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-        <p>&copy; 2024 Benjamin Buckfield Richards. All rights reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Benjamin Buckfield Richards. All rights reserved.</p>
+  </footer>
+
+  <!-- ===== Gamification UI (all code, no new assets) ===== -->
+  <div id="gamify-hud" class="hud" aria-live="polite">
+    <button id="hud-toggle" class="hud-toggle" aria-expanded="false" aria-controls="hud-panel" title="Toggle Gamification HUD">
+      <i class="fas fa-gamepad"></i><span>Gamify</span>
+    </button>
+
+    <div id="hud-panel" class="hud-panel" hidden>
+      <div class="hud-header">
+        <span><i class="fas fa-user-astronaut"></i> Player Card</span>
+        <button id="achievements-btn" class="mini-btn"><i class="fas fa-trophy"></i> Achievements</button>
+      </div>
+
+      <div class="level-row">
+        <span id="level">Lv 1</span>
+        <span id="xp-label">0 / 100 XP</span>
+      </div>
+      <div class="xp-bar" aria-label="Experience" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="xp-fill" id="xp-fill" style="width:0%"></div>
+      </div>
+
+      <div class="streak-row"><i class="fas fa-fire"></i> <span id="streak">0</span> day streak</div>
+
+      <div class="badges" id="badges" aria-label="Badges"></div>
+
+      <div class="quests" id="quests">
+        <div class="quests-title"><i class="fas fa-tasks"></i> Daily Quests</div>
+        <ul id="quest-list" class="quest-list"></ul>
+      </div>
+
+      <div class="hud-actions">
+        <button id="reset-progress" class="mini-btn ghost" title="Reset all progress"><i class="fas fa-undo"></i> Reset</button>
+        <span class="hint">Psst: ↑↑↓↓←→←→BA</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Achievements modal -->
+  <div id="achievements-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="achievements-title" hidden>
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3 id="achievements-title"><i class="fas fa-trophy"></i> Achievements</h3>
+        <button id="achievements-close" class="mini-btn ghost" aria-label="Close achievements"><i class="fas fa-times"></i></button>
+      </div>
+      <div id="achievements-list" class="achievements-list"></div>
+    </div>
+  </div>
+
+  <!-- Toasts + Confetti -->
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+  <canvas id="confetti" class="confetti" hidden></canvas>
 </body>
 </html>
